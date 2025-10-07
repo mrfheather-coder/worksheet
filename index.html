@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lesson 2 Interactive Worksheet</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:20px; background:#f9f9f9; line-height:1.6;}
+    .question{background:white;padding:18px;border-radius:10px;margin-bottom:20px;box-shadow:0 2px 6px rgba(0,0,0,.1);}
+    .options label{display:block;margin:6px 0;}
+    input[type="text"]{padding:6px;border-radius:6px;border:1px solid #ccc;margin:2px;}
+    .feedback{margin-left:10px;font-weight:bold;}
+    .correct{color:green;}
+    .incorrect{color:red;}
+    .word-bank{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+    .word-pill{background:#eef7ee;padding:6px 10px;border-radius:999px;font-weight:bold;color:#164e2e;}
+    @media(max-width:600px){input[type="text"]{width:100%;}}
+  </style>
+</head>
+<body>
+  <h1>Lesson 2 — Interactive Worksheet</h1>
+
+  <!-- SECTION 1 (instant) -->
+  <div id="section1" class="question">
+    <p><b>1. Choose the correct stressed syllable</b></p>
+    <!-- 9 words -->
+    <div data-word="ultra-processed">
+      <p><i>ultra-processed</i></p>
+      <label><input type="radio" name="q1" value="wrong"> ul - tra - pro - CESSED <span class="feedback"></span></label>
+      <label><input type="radio" name="q1" value="correct"> ul - tra - PRO - cessed <span class="feedback"></span></label>
+    </div>
+    <div data-word="measures">
+      <p><i>measures</i></p>
+      <label><input type="radio" name="q2" value="correct"> MEA - sures <span class="feedback"></span></label>
+      <label><input type="radio" name="q2" value="wrong"> mea - SURES <span class="feedback"></span></label>
+    </div>
+    <div data-word="marketing">
+      <p><i>marketing</i></p>
+      <label><input type="radio" name="q3" value="wrong"> mar - ke - TING <span class="feedback"></span></label>
+      <label><input type="radio" name="q3" value="correct"> MAR - ke - ting <span class="feedback"></span></label>
+    </div>
+    <div data-word="restriction">
+      <p><i>restriction</i></p>
+      <label><input type="radio" name="q4" value="correct"> re - STRIC - tion <span class="feedback"></span></label>
+      <label><input type="radio" name="q4" value="wrong"> RE - stric - tion <span class="feedback"></span></label>
+    </div>
+    <div data-word="governments">
+      <p><i>governments</i></p>
+      <label><input type="radio" name="q5" value="wrong"> gov - er(n) - MENTS <span class="feedback"></span></label>
+      <label><input type="radio" name="q5" value="correct"> GOV - er(n) - ments <span class="feedback"></span></label>
+    </div>
+    <div data-word="subsidies">
+      <p><i>subsidies</i></p>
+      <label><input type="radio" name="q6" value="correct"> SUB - si - dies <span class="feedback"></span></label>
+      <label><input type="radio" name="q6" value="wrong"> sub - SI - dies <span class="feedback"></span></label>
+    </div>
+    <div data-word="packaging">
+      <p><i>packaging</i></p>
+      <label><input type="radio" name="q7" value="correct"> PACK - a - ging <span class="feedback"></span></label>
+      <label><input type="radio" name="q7" value="wrong"> pack - a - GING <span class="feedback"></span></label>
+    </div>
+    <div data-word="labelling">
+      <p><i>labelling</i></p>
+      <label><input type="radio" name="q8" value="wrong"> la - BELL - ing <span class="feedback"></span></label>
+      <label><input type="radio" name="q8" value="correct"> LA - bell - ing <span class="feedback"></span></label>
+    </div>
+    <div data-word="reformulation">
+      <p><i>reformulation</i></p>
+      <label><input type="radio" name="q9" value="wrong"> RE - for - mu - la - tion <span class="feedback"></span></label>
+      <label><input type="radio" name="q9" value="correct"> re - for - mu - LA - tion <span class="feedback"></span></label>
+    </div>
+  </div>
+
+  <!-- SECTION 2 (instant) -->
+  <div id="section2" class="question">
+    <p><b>2. Fill in the blanks using:</b></p>
+    <div class="word-bank">
+      <span class="word-pill">ultra-processed</span>
+      <span class="word-pill">measures</span>
+      <span class="word-pill">marketing</span>
+      <span class="word-pill">restriction</span>
+      <span class="word-pill">governments</span>
+      <span class="word-pill">subsidies</span>
+      <span class="word-pill">packaging</span>
+      <span class="word-pill">labelling</span>
+      <span class="word-pill">reformulation</span>
+    </div>
+
+    <p>
+      Many health experts argue that the rise in obesity and diet-related diseases is linked to the overconsumption of 
+      <input type="text" id="b1"> <span class="feedback"></span> foods. 
+      To address this, many <input type="text" id="b2"> <span class="feedback"></span> have introduced several 
+      <input type="text" id="b3"> <span class="feedback"></span>, including tighter rules on how companies can advertise unhealthy products. 
+      One important step has been placing a <input type="text" id="b4"> <span class="feedback"></span> on junk food 
+      <input type="text" id="b5"> <span class="feedback"></span>, especially those aimed at children. 
+      Other policies include clearer food <input type="text" id="b6"> <span class="feedback"></span> and regulations around 
+      <input type="text" id="b7"> <span class="feedback"></span> design to avoid misleading claims. 
+      Financial <input type="text" id="b8"> <span class="feedback"></span> have also been suggested to encourage healthier options, 
+      along with product <input type="text" id="b9"> <span class="feedback"></span> to reduce sugar, salt, and fat levels.
+    </p>
+  </div>
+
+  <!-- SECTION 3 (instant multiple correct) -->
+  <div id="section3" class="question">
+    <p><b>3. Which two verbs collocate with the noun?</b></p>
+
+    <div data-word="ultra-processed foods" class="options">
+      <p><i>ultra-processed foods</i></p>
+      <label><input type="checkbox" value="correct">(over)consume <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">manufacture <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">maintain <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="measures" class="options">
+      <p><i>measures</i></p>
+      <label><input type="checkbox" value="wrong">assume <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">introduce <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">implement <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="misleading marketing" class="options">
+      <p><i>misleading marketing</i></p>
+      <label><input type="checkbox" value="correct">regulate <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">approach <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">ban <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="a restriction" class="options">
+      <p><i>a restriction</i></p>
+      <label><input type="checkbox" value="correct">impose <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">place __ on <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">define <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="subsidies" class="options">
+      <p><i>subsidies</i></p>
+      <label><input type="checkbox" value="wrong">swallow <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">provide <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">receive <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="packaging" class="options">
+      <p><i>packaging</i></p>
+      <label><input type="checkbox" value="correct">design <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">recycle <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">drive <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="labelling" class="options">
+      <p><i>labelling</i></p>
+      <label><input type="checkbox" value="correct">improve <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">demonstrate <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">require <span class="feedback"></span></label>
+    </div>
+
+    <div data-word="reformulation" class="options">
+      <p><i>reformulation</i></p>
+      <label><input type="checkbox" value="correct">encourage <span class="feedback"></span></label>
+      <label><input type="checkbox" value="correct">promote <span class="feedback"></span></label>
+      <label><input type="checkbox" value="wrong">paint <span class="feedback"></span></label>
+    </div>
+  </div>
+
+  <script>
+    // Section 1 instant feedback
+    document.querySelectorAll('#section1 input[type=radio]').forEach(radio=>{
+      radio.addEventListener('change',()=>{
+        const parent=radio.parentElement;
+        const fb=parent.querySelector('.feedback');
+        if(radio.value==="correct"){fb.textContent="✅";fb.className="feedback correct";}
+        else{fb.textContent="❌";fb.className="feedback incorrect";}
+        parent.parentElement.querySelectorAll('.feedback').forEach(f=>{if(f!==fb) f.textContent="";});
+      });
+    });
+
+    // Section 2 instant feedback
+    const answers=["ultra-processed","governments","measures","restriction","marketing","labelling","packaging","subsidies","reformulation"];
+    answers.forEach((ans,i)=>{
+      const input=document.getElementById("b"+(i+1));
+      input.addEventListener('blur',()=>{
+        const fb=input.nextElementSibling;
+        if(input.value.trim().toLowerCase()===ans){fb.textContent="✅";fb.className="feedback correct";}
+        else{fb.textContent="❌";fb.className="feedback incorrect";}
+      });
+    });
+
+    // Section 3 instant feedback with checkboxes
+    document.querySelectorAll('#section3 input[type=checkbox]').forEach(box=>{
+      box.addEventListener('change',()=>{
+        const fb=box.parentElement.querySelector('.feedback');
+        if(box.value==="correct"){
+          fb.textContent="✅";fb.className="feedback correct";
+        } else {
+          fb.textContent="❌";fb.className="feedback incorrect";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
